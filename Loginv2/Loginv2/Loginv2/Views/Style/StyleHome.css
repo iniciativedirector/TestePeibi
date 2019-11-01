@@ -1,0 +1,20 @@
+﻿body
+{
+}
+
+stacklayout.main{
+    padding: 20;
+}
+
+#logo{
+    width:40;
+    height: 40;
+    box-shadow: inherit;
+    
+}
+
+#boxline{
+    height: 1;
+    background-color: gray;
+
+}

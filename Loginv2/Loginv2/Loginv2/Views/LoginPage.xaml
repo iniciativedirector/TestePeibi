@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Loginv2.Views.LoginPage">
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" >
+
+            <Image Source="futebol.png" Aspect="AspectFit" />
+
+        </StackLayout>
+        <Image Source="logo.png" Aspect="AspectFit" Grid.Row="1" />
+        <Grid Grid.Row="2" Padding="20" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+
+            <Entry Placeholder="Email" Grid.Row="0" />
+            <Entry Placeholder="Senha" Grid.Row="1" />
+
+            <Button Text="Entrar" Grid.Row="2"  CornerRadius="25" BackgroundColor="#FECB1D" TextColor="#040404" Font="bold"/>
+
+            <Button Text="Cadastrar" Grid.Row="3"  CornerRadius="25" BackgroundColor="#FECB1D" TextColor="#040404" Font="bold" Clicked="Button_Clicked"/>
+        </Grid>
+    </Grid>
+</ContentPage>

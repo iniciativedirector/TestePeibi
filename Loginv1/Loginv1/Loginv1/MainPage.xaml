@@ -14,6 +14,8 @@
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0" Text="Testando" Font="32,bold"/>
+        
+        <Image Source="logo.png" Grid.Row="1" Aspect="AspectFill"/>
     </Grid>
 
 </ContentPage>
