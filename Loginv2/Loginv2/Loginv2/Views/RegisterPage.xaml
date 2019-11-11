@@ -30,6 +30,7 @@
                     <RowDefinition Height="0.5*"/>
                     <RowDefinition Height="0.5*"/>
                     <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
                 </Grid.RowDefinitions>
                 
                 <Entry x:Name="entNome" Placeholder="Nome" Grid.Row="0" />
@@ -38,9 +39,11 @@
                 <!--<Entry x:Name="entCPF" Placeholder="CPF" Grid.Row="3"/>-->
                 <Entry x:Name="entSenha" Placeholder="Senha" Grid.Row="3" IsPassword="True"/>
 
+                <Entry x:Name="entConfirmSenha" Placeholder="Confirmar Senha" Grid.Row="4" IsPassword="True"/>
 
-                <Label ></Label>
-                <Button Text="Criar Conta" Grid.Row="4" 
+
+
+                <Button Text="Criar Conta" Grid.Row="5" 
                         BackgroundColor="#FECB1D" 
                         TextColor="#040404" 
                         Font="bold" 

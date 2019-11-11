@@ -19,9 +19,6 @@ namespace Loginv2.Views
 
         internal static List<Cliente> ItemsSource { get; set; }
 
-        public void AtualizaLista()
-        {
-
-        }
+      
     }
 }

@@ -5,10 +5,11 @@ using SQLite;
 
 namespace Loginv2.Models
 {
-    [Table("TB_Cliente")]
+    [Table("TB_Cliente1")]
     class Cliente
     {
-        [PrimaryKey,AutoIncrement]
+        //[PrimaryKey,AutoIncrement]
+        [NotNull]
         public int Id { get; set; }
         [NotNull]
         public string Nome { get; set; }
@@ -18,19 +19,19 @@ namespace Loginv2.Models
         public string Email { get; set; }
         [NotNull]
         public string Senha { get; set; }
-        
-        public string CPF { get; set; }
+        [NotNull]
+        public string ConfirmarSenha { get; set; }
 
 
-        public Cliente()
-        {
-            this.Id = 0;
-            this.Nome = "";
-            this.SobreNome = "";
-            this.Email = "";
-            this.Senha = "";
-            this.CPF = "";
-        }
+        //public Cliente()
+        //{
+        //    this.Id = 0;
+        //    this.Nome = "";
+        //    this.SobreNome = "";
+        //    this.Email = "";
+        //    this.Senha = "";
+        //    this.ConfirmarSenha = "";
+        //}
 
     }
 }

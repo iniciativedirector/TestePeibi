@@ -38,10 +38,11 @@ namespace Loginv2.Views
             cliente.SobreNome = entSobreNome.ToString();
             cliente.Email = entEmail.ToString();
             cliente.Senha = entSenha.ToString() ;
+            cliente.ConfirmarSenha = entConfirmSenha.ToString();
 
             ServicesDB db = new ServicesDB(App.DbPath);
             db.Inserir(cliente);
-            //DisplayAlert("Resultado da operação", "das","Cliente cadastrado com sucesse Ok");
+            await DisplayAlert("Resultado " , db.StatusMessage, "OK");
             await Navigation.PushModalAsync(new PrincipalPage(), true);
         }
 
@@ -54,7 +55,6 @@ namespace Loginv2.Views
         private void Button_Clicked(object sender, EventArgs e)
         {
             InserirItens();
-            AtualizaLista();
         }
     }
 }
